@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\SAMYAK\\Downloads\\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v23\\values-v23.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SAMYAK\\.gradle\\caches\\transforms-2\\files-2.1\\606212c008e6b8756be5dc455056c04f\\work-runtime-2.2.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">269309632485-jq1uih9csmj557fmo8fsmdhgucptfhj4.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://face-recog-flutter.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">269309632485</string>
+    <string name="google_api_key" translatable="false">AIzaSyCHfSBgN_tGjRvN12zV1HpOYhVjRYdN88k</string>
+    <string name="google_app_id" translatable="false">1:269309632485:android:730eb146d843d768d3590c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCHfSBgN_tGjRvN12zV1HpOYhVjRYdN88k</string>
+    <string name="google_storage_bucket" translatable="false">face-recog-flutter.appspot.com</string>
+    <string name="project_id" translatable="false">face-recog-flutter</string>
+</resources>

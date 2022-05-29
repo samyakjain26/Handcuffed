@@ -1,0 +1,534 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rajatkalsotra.face_recognition"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->[:camera] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:9:5-65
+11-->[:camera] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:9:22-62
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->[:camera] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:10:5-71
+12-->[:camera] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:10:22-68
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:22:5-79
+13-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:22:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:23:5-67
+14-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:23:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:24:5-68
+15-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+16-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:26:22-107
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:27:5-81
+18-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:27:22-78
+19    <!--
+20 io.flutter.app.FlutterApplication is an android.app.Application that
+21         calls FlutterMain.startInitialization(this); in its onCreate method.
+22         In most cases you can leave this as-is, but you if you want to provide
+23         additional functionality it is fine to subclass or reimplement
+24         FlutterApplication and put your custom class here.
+25    -->
+26    <application
+26-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:8:5-29:19
+27        android:name="io.flutter.app.FlutterApplication"
+27-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:9:9-57
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\fa6f4e21abebe2d79db3175d07d54142\core-1.2.0\AndroidManifest.xml:24:18-86
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:11:9-43
+30        android:label="Face Recognition" >
+30-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:10:9-41
+31        <activity
+31-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:12:9-23:20
+32            android:name="com.rajatkalsotra.face_recognition.MainActivity"
+32-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:13:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:16:13-163
+34            android:hardwareAccelerated="true"
+34-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:17:13-47
+35            android:launchMode="singleTop"
+35-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:14:13-43
+36            android:theme="@style/LaunchTheme"
+36-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:15:13-47
+37            android:windowSoftInputMode="adjustResize" >
+37-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:18:13-55
+38            <intent-filter>
+38-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:19:13-22:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:20:17-68
+39-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:20:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:21:17-76
+41-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:21:27-74
+42            </intent-filter>
+43        </activity>
+44        <!--
+45             Don't delete the meta-data below.
+46             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+47        -->
+48        <meta-data
+48-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:26:9-28:33
+49            android:name="flutterEmbedding"
+49-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:27:13-44
+50            android:value="2" />
+50-->C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\android\app\src\main\AndroidManifest.xml:28:13-30
+51
+52        <service
+52-->[:firebase_core] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+53            android:name="com.google.firebase.components.ComponentDiscoveryService"
+53-->[:firebase_core] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
+54            android:directBootAware="true"
+54-->[com.google.firebase:firebase-common:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4e383a0ca3309c6e909d7b00116f9ecc\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+55            android:exported="false" >
+55-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:31:13-37
+56            <meta-data
+56-->[:firebase_core] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+57                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+57-->[:firebase_core] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+58                android:value="com.google.firebase.components.ComponentRegistrar" />
+58-->[:firebase_core] C:\Users\SAMYAK\Downloads\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\Face-Recognition-Flutter-4c14fbd719ce41f8ad49d1f34e188eaec8ab3116\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+59            <meta-data
+59-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+60                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+60-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9b415b0aef3771553cfc08cc456e9e43\firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+62            <meta-data
+62-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\1f820ad593bb6fdb601fe328d351d23f\play-services-measurement-api-20.0.0\AndroidManifest.xml:30:13-32:85
+63                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+63-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\1f820ad593bb6fdb601fe328d351d23f\play-services-measurement-api-20.0.0\AndroidManifest.xml:31:17-139
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\1f820ad593bb6fdb601fe328d351d23f\play-services-measurement-api-20.0.0\AndroidManifest.xml:32:17-82
+65            <meta-data
+65-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\0c35130840ee98077e069bd3cce550fb\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+66                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+66-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\0c35130840ee98077e069bd3cce550fb\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\0c35130840ee98077e069bd3cce550fb\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+68        </service>
+69        <service
+69-->[com.google.mlkit:linkfirebase:16.1.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\19fb7a7df992d2d3237ce478752d385a\linkfirebase-16.1.1\AndroidManifest.xml:9:9-15:19
+70            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+70-->[com.google.mlkit:linkfirebase:16.1.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\19fb7a7df992d2d3237ce478752d385a\linkfirebase-16.1.1\AndroidManifest.xml:10:13-91
+71            android:directBootAware="true"
+71-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:17:13-43
+72            android:exported="false" >
+72-->[com.google.mlkit:linkfirebase:16.1.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\19fb7a7df992d2d3237ce478752d385a\linkfirebase-16.1.1\AndroidManifest.xml:11:13-37
+73            <meta-data
+73-->[com.google.mlkit:linkfirebase:16.1.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\19fb7a7df992d2d3237ce478752d385a\linkfirebase-16.1.1\AndroidManifest.xml:12:13-14:85
+74                android:name="com.google.firebase.components:com.google.mlkit.linkfirebase.internal.LinkFirebaseComponentRegistrar"
+74-->[com.google.mlkit:linkfirebase:16.1.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\19fb7a7df992d2d3237ce478752d385a\linkfirebase-16.1.1\AndroidManifest.xml:13:17-132
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.mlkit:linkfirebase:16.1.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\19fb7a7df992d2d3237ce478752d385a\linkfirebase-16.1.1\AndroidManifest.xml:14:17-82
+76            <meta-data
+76-->[com.google.mlkit:translate:16.1.2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\30d4f26bbc456b991facb87381d60827\translate-16.1.2\AndroidManifest.xml:14:13-16:85
+77                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+77-->[com.google.mlkit:translate:16.1.2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\30d4f26bbc456b991facb87381d60827\translate-16.1.2\AndroidManifest.xml:15:17-126
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.mlkit:translate:16.1.2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\30d4f26bbc456b991facb87381d60827\translate-16.1.2\AndroidManifest.xml:16:17-82
+79            <meta-data
+79-->[com.google.mlkit:translate:16.1.2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\30d4f26bbc456b991facb87381d60827\translate-16.1.2\AndroidManifest.xml:17:13-19:85
+80                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.RemoteConfigRegistrar"
+80-->[com.google.mlkit:translate:16.1.2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\30d4f26bbc456b991facb87381d60827\translate-16.1.2\AndroidManifest.xml:18:17-114
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.mlkit:translate:16.1.2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\30d4f26bbc456b991facb87381d60827\translate-16.1.2\AndroidManifest.xml:19:17-82
+82            <meta-data
+82-->[com.google.mlkit:entity-extraction:16.0.0-beta2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9f7dbba845f2468b2eba67e4631ee8a4\jetified-entity-extraction-16.0.0-beta2\AndroidManifest.xml:14:13-16:85
+83                android:name="com.google.firebase.components:com.google.mlkit.nl.entityextraction.internal.EntityExtractionComponentRegistrar"
+83-->[com.google.mlkit:entity-extraction:16.0.0-beta2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9f7dbba845f2468b2eba67e4631ee8a4\jetified-entity-extraction-16.0.0-beta2\AndroidManifest.xml:15:17-143
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.mlkit:entity-extraction:16.0.0-beta2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9f7dbba845f2468b2eba67e4631ee8a4\jetified-entity-extraction-16.0.0-beta2\AndroidManifest.xml:16:17-82
+85            <meta-data
+85-->[com.google.mlkit:smart-reply:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\41c71bbef69b0661e2cc49bc8c0c6ce5\smart-reply-16.2.0\AndroidManifest.xml:26:13-28:85
+86                android:name="com.google.firebase.components:com.google.mlkit.nl.smartreply.component.SmartReplyComponentRegistrar"
+86-->[com.google.mlkit:smart-reply:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\41c71bbef69b0661e2cc49bc8c0c6ce5\smart-reply-16.2.0\AndroidManifest.xml:27:17-132
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.mlkit:smart-reply:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\41c71bbef69b0661e2cc49bc8c0c6ce5\smart-reply-16.2.0\AndroidManifest.xml:28:17-82
+88            <meta-data
+88-->[com.google.mlkit:smart-reply:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\41c71bbef69b0661e2cc49bc8c0c6ce5\smart-reply-16.2.0\AndroidManifest.xml:29:13-31:85
+89                android:name="com.google.firebase.components:com.google.mlkit.nl.smartreply.component.RemoteConfigRegistrar"
+89-->[com.google.mlkit:smart-reply:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\41c71bbef69b0661e2cc49bc8c0c6ce5\smart-reply-16.2.0\AndroidManifest.xml:30:17-125
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.mlkit:smart-reply:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\41c71bbef69b0661e2cc49bc8c0c6ce5\smart-reply-16.2.0\AndroidManifest.xml:31:17-82
+91            <meta-data
+91-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\d11917c0e8fea17de28214cf03fae045\play-services-mlkit-barcode-scanning-16.2.1\AndroidManifest.xml:12:13-14:85
+92                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+92-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\d11917c0e8fea17de28214cf03fae045\play-services-mlkit-barcode-scanning-16.2.1\AndroidManifest.xml:13:17-120
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.2.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\d11917c0e8fea17de28214cf03fae045\play-services-mlkit-barcode-scanning-16.2.1\AndroidManifest.xml:14:17-82
+94            <meta-data
+94-->[com.google.android.gms:play-services-mlkit-image-labeling:16.0.5] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\0b16208b5a38fb9120a787cba143ecc1\play-services-mlkit-image-labeling-16.0.5\AndroidManifest.xml:11:13-13:85
+95                android:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.thin.ThinLabelRegistrar"
+95-->[com.google.android.gms:play-services-mlkit-image-labeling:16.0.5] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\0b16208b5a38fb9120a787cba143ecc1\play-services-mlkit-image-labeling-16.0.5\AndroidManifest.xml:12:17-125
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.android.gms:play-services-mlkit-image-labeling:16.0.5] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\0b16208b5a38fb9120a787cba143ecc1\play-services-mlkit-image-labeling-16.0.5\AndroidManifest.xml:13:17-82
+97            <meta-data
+97-->[com.google.mlkit:image-labeling-custom:16.3.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\50f0d0f19d985419f2e40fd1ac8d8e58\image-labeling-custom-16.3.1\AndroidManifest.xml:11:13-13:85
+98                android:name="com.google.firebase.components:com.google.mlkit.vision.label.custom.internal.CustomLabelRegistrar"
+98-->[com.google.mlkit:image-labeling-custom:16.3.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\50f0d0f19d985419f2e40fd1ac8d8e58\image-labeling-custom-16.3.1\AndroidManifest.xml:12:17-129
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.mlkit:image-labeling-custom:16.3.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\50f0d0f19d985419f2e40fd1ac8d8e58\image-labeling-custom-16.3.1\AndroidManifest.xml:13:17-82
+100            <meta-data
+100-->[com.google.mlkit:image-labeling-automl:16.2.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\d3ec3fd683bbfc9c2664b2ae880a8e38\image-labeling-automl-16.2.1\AndroidManifest.xml:11:13-13:85
+101                android:name="com.google.firebase.components:com.google.mlkit.vision.label.automl.internal.AutoMLLabelRegistrar"
+101-->[com.google.mlkit:image-labeling-automl:16.2.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\d3ec3fd683bbfc9c2664b2ae880a8e38\image-labeling-automl-16.2.1\AndroidManifest.xml:12:17-129
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.mlkit:image-labeling-automl:16.2.1] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\d3ec3fd683bbfc9c2664b2ae880a8e38\image-labeling-automl-16.2.1\AndroidManifest.xml:13:17-82
+103            <meta-data
+103-->[com.google.mlkit:digital-ink-recognition:17.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4deb18001d3357597229e3ef6e9726cc\jetified-digital-ink-recognition-17.0.0\AndroidManifest.xml:15:13-17:85
+104                android:name="com.google.firebase.components:com.google.mlkit.vision.digitalink.internal.DigitalInkRecognitionRegistrar"
+104-->[com.google.mlkit:digital-ink-recognition:17.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4deb18001d3357597229e3ef6e9726cc\jetified-digital-ink-recognition-17.0.0\AndroidManifest.xml:16:17-137
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.mlkit:digital-ink-recognition:17.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4deb18001d3357597229e3ef6e9726cc\jetified-digital-ink-recognition-17.0.0\AndroidManifest.xml:17:17-82
+106            <meta-data
+106-->[com.google.mlkit:object-detection:16.2.7] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c4d06a32267f64a4119cc96172614606\jetified-object-detection-16.2.7\AndroidManifest.xml:11:13-13:85
+107                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar"
+107-->[com.google.mlkit:object-detection:16.2.7] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c4d06a32267f64a4119cc96172614606\jetified-object-detection-16.2.7\AndroidManifest.xml:12:17-136
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.mlkit:object-detection:16.2.7] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c4d06a32267f64a4119cc96172614606\jetified-object-detection-16.2.7\AndroidManifest.xml:13:17-82
+109            <meta-data
+109-->[com.google.mlkit:object-detection-custom:16.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\da556c5753a39fe94734c40e5dba7e8b\object-detection-custom-16.3.3\AndroidManifest.xml:11:13-13:85
+110                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar"
+110-->[com.google.mlkit:object-detection-custom:16.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\da556c5753a39fe94734c40e5dba7e8b\object-detection-custom-16.3.3\AndroidManifest.xml:12:17-133
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.mlkit:object-detection-custom:16.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\da556c5753a39fe94734c40e5dba7e8b\object-detection-custom-16.3.3\AndroidManifest.xml:13:17-82
+112            <meta-data
+112-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\2302e74bc963fe9e240868feafc53a54\play-services-mlkit-face-detection-16.2.0\AndroidManifest.xml:12:13-14:85
+113                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+113-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\2302e74bc963fe9e240868feafc53a54\play-services-mlkit-face-detection-16.2.0\AndroidManifest.xml:13:17-114
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.android.gms:play-services-mlkit-face-detection:16.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\2302e74bc963fe9e240868feafc53a54\play-services-mlkit-face-detection-16.2.0\AndroidManifest.xml:14:17-82
+115            <meta-data
+115-->[com.google.android.gms:play-services-mlkit-language-id:16.0.0-beta2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\a4cad7623ad7eaa608c5bf1cb0095039\play-services-mlkit-language-id-16.0.0-beta2\AndroidManifest.xml:11:13-13:85
+116                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar"
+116-->[com.google.android.gms:play-services-mlkit-language-id:16.0.0-beta2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\a4cad7623ad7eaa608c5bf1cb0095039\play-services-mlkit-language-id-16.0.0-beta2\AndroidManifest.xml:12:17-122
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.android.gms:play-services-mlkit-language-id:16.0.0-beta2] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\a4cad7623ad7eaa608c5bf1cb0095039\play-services-mlkit-language-id-16.0.0-beta2\AndroidManifest.xml:13:17-82
+118            <meta-data
+118-->[com.google.mlkit:pose-detection-common:17.1.0-beta5] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\bdf2b4e80887de3fba2da849a3b46a05\jetified-pose-detection-common-17.1.0-beta5\AndroidManifest.xml:11:13-13:85
+119                android:name="com.google.firebase.components:com.google.mlkit.vision.pose.internal.PoseRegistrar"
+119-->[com.google.mlkit:pose-detection-common:17.1.0-beta5] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\bdf2b4e80887de3fba2da849a3b46a05\jetified-pose-detection-common-17.1.0-beta5\AndroidManifest.xml:12:17-114
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.mlkit:pose-detection-common:17.1.0-beta5] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\bdf2b4e80887de3fba2da849a3b46a05\jetified-pose-detection-common-17.1.0-beta5\AndroidManifest.xml:13:17-82
+121            <meta-data
+121-->[com.google.mlkit:vision-internal-vkp:18.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\5a411ac7c38629f2ae88035d41a9a1e4\vision-internal-vkp-18.2.0\AndroidManifest.xml:11:13-13:85
+122                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
+122-->[com.google.mlkit:vision-internal-vkp:18.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\5a411ac7c38629f2ae88035d41a9a1e4\vision-internal-vkp-18.2.0\AndroidManifest.xml:12:17-103
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.mlkit:vision-internal-vkp:18.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\5a411ac7c38629f2ae88035d41a9a1e4\vision-internal-vkp-18.2.0\AndroidManifest.xml:13:17-82
+124            <meta-data
+124-->[com.google.android.gms:play-services-mlkit-text-recognition-common:16.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\50479f9fe5e9da4f62605b29f9858060\play-services-mlkit-text-recognition-common-16.0.0\AndroidManifest.xml:12:13-14:85
+125                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+125-->[com.google.android.gms:play-services-mlkit-text-recognition-common:16.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\50479f9fe5e9da4f62605b29f9858060\play-services-mlkit-text-recognition-common-16.0.0\AndroidManifest.xml:13:17-114
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.android.gms:play-services-mlkit-text-recognition-common:16.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\50479f9fe5e9da4f62605b29f9858060\play-services-mlkit-text-recognition-common-16.0.0\AndroidManifest.xml:14:17-82
+127            <meta-data
+127-->[com.google.mlkit:vision-common:16.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\fc5bf539de8866fd7c554129cea16cc1\vision-common-16.6.0\AndroidManifest.xml:12:13-14:85
+128                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+128-->[com.google.mlkit:vision-common:16.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\fc5bf539de8866fd7c554129cea16cc1\vision-common-16.6.0\AndroidManifest.xml:13:17-124
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.mlkit:vision-common:16.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\fc5bf539de8866fd7c554129cea16cc1\vision-common-16.6.0\AndroidManifest.xml:14:17-82
+130            <meta-data
+130-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:20:13-22:85
+131                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+131-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:21:17-120
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:22:17-82
+133        </service>
+134
+135        <provider
+135-->[com.google.firebase:firebase-common:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4e383a0ca3309c6e909d7b00116f9ecc\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+136            android:name="com.google.firebase.provider.FirebaseInitProvider"
+136-->[com.google.firebase:firebase-common:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4e383a0ca3309c6e909d7b00116f9ecc\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+137            android:authorities="com.rajatkalsotra.face_recognition.firebaseinitprovider"
+137-->[com.google.firebase:firebase-common:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4e383a0ca3309c6e909d7b00116f9ecc\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4e383a0ca3309c6e909d7b00116f9ecc\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+139            android:exported="false"
+139-->[com.google.firebase:firebase-common:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4e383a0ca3309c6e909d7b00116f9ecc\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+140            android:initOrder="100" />
+140-->[com.google.firebase:firebase-common:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\4e383a0ca3309c6e909d7b00116f9ecc\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+141        <provider
+141-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:9:9-13:38
+142            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+142-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:10:13-78
+143            android:authorities="com.rajatkalsotra.face_recognition.mlkitinitprovider"
+143-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:11:13-69
+144            android:exported="false"
+144-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:12:13-37
+145            android:initOrder="99" />
+145-->[com.google.mlkit:common:17.4.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\32dcfed2cd739d7b7a60673fed5783e8\common-17.4.0\AndroidManifest.xml:13:13-35
+146
+147        <activity
+147-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\3c54a2a3e242a2664e408033048a0527\play-services-base-17.6.0\AndroidManifest.xml:23:9-26:75
+148            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+148-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\3c54a2a3e242a2664e408033048a0527\play-services-base-17.6.0\AndroidManifest.xml:24:13-79
+149            android:exported="false"
+149-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\3c54a2a3e242a2664e408033048a0527\play-services-base-17.6.0\AndroidManifest.xml:25:13-37
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.android.gms:play-services-base:17.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\3c54a2a3e242a2664e408033048a0527\play-services-base-17.6.0\AndroidManifest.xml:26:13-72
+151
+152        <receiver
+152-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:29:9-33:20
+153            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+153-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:30:13-85
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:31:13-35
+155            android:exported="false" >
+155-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:32:13-37
+156        </receiver>
+157
+158        <service
+158-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:35:9-38:40
+159            android:name="com.google.android.gms.measurement.AppMeasurementService"
+159-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:36:13-84
+160            android:enabled="true"
+160-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:37:13-35
+161            android:exported="false" />
+161-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:38:13-37
+162        <service
+162-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:39:9-43:72
+163            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+163-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
+164            android:enabled="true"
+164-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:41:13-35
+165            android:exported="false"
+165-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:42:13-37
+166            android:permission="android.permission.BIND_JOB_SERVICE" />
+166-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\c9b09735ad92871fa12b80aa70a03c60\play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
+167
+168        <meta-data
+168-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\895d1126ce02ec427bfc5821f862c64a\jetified-play-services-basement-17.6.0\AndroidManifest.xml:23:9-25:69
+169            android:name="com.google.android.gms.version"
+169-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\895d1126ce02ec427bfc5821f862c64a\jetified-play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
+170            android:value="@integer/google_play_services_version" />
+170-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\895d1126ce02ec427bfc5821f862c64a\jetified-play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
+171
+172        <provider
+172-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:30:9-36:35
+173            android:name="androidx.work.impl.WorkManagerInitializer"
+173-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:31:13-69
+174            android:authorities="com.rajatkalsotra.face_recognition.workmanager-init"
+174-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:32:13-68
+175            android:directBootAware="false"
+175-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:33:13-44
+176            android:exported="false"
+176-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:34:13-37
+177            android:multiprocess="true" />
+177-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:35:13-40
+178
+179        <service
+179-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:38:9-43:35
+180            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+180-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:39:13-88
+181            android:directBootAware="false"
+181-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:40:13-44
+182            android:enabled="@bool/enable_system_alarm_service_default"
+182-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:41:13-72
+183            android:exported="false" />
+183-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:42:13-37
+184        <service
+184-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:44:9-50:35
+185            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+185-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:45:13-84
+186            android:directBootAware="false"
+186-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:46:13-44
+187            android:enabled="@bool/enable_system_job_service_default"
+187-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:47:13-70
+188            android:exported="true"
+188-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:48:13-36
+189            android:permission="android.permission.BIND_JOB_SERVICE" />
+189-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:49:13-69
+190
+191        <receiver
+191-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:52:9-57:35
+192            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+192-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:53:13-88
+193            android:directBootAware="false"
+193-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:54:13-44
+194            android:enabled="true"
+194-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:55:13-35
+195            android:exported="false" />
+195-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:56:13-37
+196        <receiver
+196-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:58:9-68:20
+197            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+197-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:59:13-106
+198            android:directBootAware="false"
+198-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:60:13-44
+199            android:enabled="false"
+199-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:61:13-36
+200            android:exported="false" >
+200-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:62:13-37
+201            <intent-filter>
+201-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:64:13-67:29
+202                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+202-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:65:17-87
+202-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:65:25-84
+203                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+203-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:66:17-90
+203-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:66:25-87
+204            </intent-filter>
+205        </receiver>
+206        <receiver
+206-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:69:9-79:20
+207            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+207-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:70:13-104
+208            android:directBootAware="false"
+208-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:71:13-44
+209            android:enabled="false"
+209-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:72:13-36
+210            android:exported="false" >
+210-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:73:13-37
+211            <intent-filter>
+211-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:75:13-78:29
+212                <action android:name="android.intent.action.BATTERY_OKAY" />
+212-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:76:17-77
+212-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:76:25-74
+213                <action android:name="android.intent.action.BATTERY_LOW" />
+213-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:77:17-76
+213-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:77:25-73
+214            </intent-filter>
+215        </receiver>
+216        <receiver
+216-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:80:9-90:20
+217            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+217-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:81:13-104
+218            android:directBootAware="false"
+218-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:82:13-44
+219            android:enabled="false"
+219-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:83:13-36
+220            android:exported="false" >
+220-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:84:13-37
+221            <intent-filter>
+221-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:86:13-89:29
+222                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+222-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:87:17-83
+222-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:87:25-80
+223                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+223-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:88:17-82
+223-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:88:25-79
+224            </intent-filter>
+225        </receiver>
+226        <receiver
+226-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:91:9-100:20
+227            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+227-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:92:13-103
+228            android:directBootAware="false"
+228-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:93:13-44
+229            android:enabled="false"
+229-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:94:13-36
+230            android:exported="false" >
+230-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:95:13-37
+231            <intent-filter>
+231-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:97:13-99:29
+232                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+232-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:98:17-79
+232-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:98:25-76
+233            </intent-filter>
+234        </receiver>
+235        <receiver
+235-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:101:9-112:20
+236            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+236-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:102:13-88
+237            android:directBootAware="false"
+237-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:103:13-44
+238            android:enabled="false"
+238-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:104:13-36
+239            android:exported="false" >
+239-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:105:13-37
+240            <intent-filter>
+240-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:107:13-111:29
+241                <action android:name="android.intent.action.BOOT_COMPLETED" />
+241-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:108:17-79
+241-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:108:25-76
+242                <action android:name="android.intent.action.TIME_SET" />
+242-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:109:17-73
+242-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:109:25-70
+243                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+243-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:110:17-81
+243-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:110:25-78
+244            </intent-filter>
+245        </receiver>
+246        <receiver
+246-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:113:9-122:20
+247            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+247-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:114:13-99
+248            android:directBootAware="false"
+248-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:115:13-44
+249            android:enabled="@bool/enable_system_alarm_service_default"
+249-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:116:13-72
+250            android:exported="false" >
+250-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:117:13-37
+251            <intent-filter>
+251-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:119:13-121:29
+252                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+252-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:120:17-98
+252-->[androidx.work:work-runtime:2.2.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\606212c008e6b8756be5dc455056c04f\work-runtime-2.2.0\AndroidManifest.xml:120:25-95
+253            </intent-filter>
+254        </receiver>
+255
+256        <service
+256-->[androidx.room:room-runtime:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\143fadad0d746a926013f3797574c209\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+257            android:name="androidx.room.MultiInstanceInvalidationService"
+257-->[androidx.room:room-runtime:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\143fadad0d746a926013f3797574c209\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+258            android:exported="false" />
+258-->[androidx.room:room-runtime:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\143fadad0d746a926013f3797574c209\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+259
+260        <provider
+260-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9efdb8de2fbb324eba57eedb811f6250\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+261            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+261-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9efdb8de2fbb324eba57eedb811f6250\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+262            android:authorities="com.rajatkalsotra.face_recognition.lifecycle-process"
+262-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9efdb8de2fbb324eba57eedb811f6250\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+263            android:exported="false"
+263-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9efdb8de2fbb324eba57eedb811f6250\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+264            android:multiprocess="true" />
+264-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\9efdb8de2fbb324eba57eedb811f6250\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+265
+266        <service
+266-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\09b5e5130a40c517e2a5706611cc42ac\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+267            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+267-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\09b5e5130a40c517e2a5706611cc42ac\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+268            android:exported="false" >
+268-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\09b5e5130a40c517e2a5706611cc42ac\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+269            <meta-data
+269-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\09b5e5130a40c517e2a5706611cc42ac\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+270                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+270-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\09b5e5130a40c517e2a5706611cc42ac\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+271                android:value="cct" />
+271-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\09b5e5130a40c517e2a5706611cc42ac\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+272        </service>
+273        <service
+273-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\7ab4264dd26e38fb584f2ee9109602db\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+274            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+274-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\7ab4264dd26e38fb584f2ee9109602db\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+275            android:exported="false"
+275-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\7ab4264dd26e38fb584f2ee9109602db\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+276            android:permission="android.permission.BIND_JOB_SERVICE" >
+276-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\7ab4264dd26e38fb584f2ee9109602db\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+277        </service>
+278
+279        <receiver
+279-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\7ab4264dd26e38fb584f2ee9109602db\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+280            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+280-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\7ab4264dd26e38fb584f2ee9109602db\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+281            android:exported="false" />
+281-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SAMYAK\.gradle\caches\transforms-2\files-2.1\7ab4264dd26e38fb584f2ee9109602db\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+282    </application>
+283
+284</manifest>
