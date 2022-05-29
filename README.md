@@ -40,13 +40,6 @@ flutter pub get
 flutter run 
 ```
 
-## Recognitions
 
-(Shots from Westworld )
-
-<p float="left">
-  <img src="images/rec1.jpg" width="46% height="100" />
-  <img src="images/rec2.jpg" width="46%" /> 
-</p>
 
 
