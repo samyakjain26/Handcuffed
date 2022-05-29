@@ -4,7 +4,6 @@
 
 Realtime face recognition flutter app update with latest null safety implementation and the depreceated Firebase ML Vision has been migrated to Google ML Kit.
 
-This base repo has been forked from https://github.com/Rajatkalsotra/Face-Recognition-Flutter.
 
 
 ## Steps
