@@ -21,7 +21,7 @@ Convert Tensorflow implementation of [MobileFaceNet](https://github.com/sirius-a
 **Step 1:** Download or clone this repo:
 
 ```
-git clone https://github.com/rjvysakh/Face-Recognition-Flutter
+git clone https://Sejzz/Handcuffed.git
 ```
 
 **Step 2:** Go to project root and execute the following command in console to get the required dependencies: 
